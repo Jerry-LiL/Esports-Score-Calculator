@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    
+    <!-- AMOLED Pure Black Theme -->
+    <color name="dark_background">#000000</color>
+    <color name="dark_surface">#1E1E1E</color>
+    <color name="dark_surface_variant">#2A2A2A</color>
+    
+    <!-- Neon Blue Theme (only for main headings) -->
+    <color name="neon_blue">#00D9FF</color>
+    <color name="neon_blue_dark">#00A8CC</color>
+    <color name="neon_blue_light">#4DFFFF</color>
+    <color name="neon_blue_accent">#0099CC</color>
+    
+    <!-- Text Colors (white for labels and secondary text) -->
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#B3B3B3</color>
+    <color name="text_hint">#666666</color>
+    
+    <!-- Border Colors - visible gray borders for input fields -->
+    <color name="border_gray">#555555</color>
+    <color name="border_gray_focused">#777777</color>
+    
+    <!-- Status Colors -->
+    <color name="success_green">#00FF88</color>
+    <color name="error_red">#FF3366</color>
+    <color name="warning_yellow">#FFD700</color>
+    <color name="neon_green">#39FF14</color>
+    <color name="neon_red">#FF073A</color>
+</resources>

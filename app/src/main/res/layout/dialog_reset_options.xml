@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/dark_background"
+    android:padding="24dp">
+
+    <!-- Title -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/reset_title"
+        android:textColor="@color/neon_blue"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/reset_subtitle"
+        android:textColor="@color/text_secondary"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Reset Current Match -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardResetCurrentMatch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/dark_surface_variant"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="12dp"
+        android:layout_marginBottom="12dp"
+        android:clickable="true"
+        android:focusable="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/reset_current_match"
+                android:textColor="@color/text_primary"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:drawableStart="@android:drawable/ic_menu_delete"
+                android:drawableTint="@color/neon_blue"
+                android:drawablePadding="12dp"
+                android:gravity="center_vertical" />
+
+            <TextView
+                android:id="@+id/tvCurrentMatchInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/reset_current_match_desc"
+                android:textColor="@color/text_secondary"
+                android:textSize="13sp"
+                android:layout_marginTop="4dp"
+                android:layout_marginStart="36dp" />
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Reset All Matches for Current Day -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardResetCurrentDay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/dark_surface_variant"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="12dp"
+        android:layout_marginBottom="12dp"
+        android:clickable="true"
+        android:focusable="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/reset_current_day"
+                android:textColor="@color/text_primary"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:drawableStart="@android:drawable/ic_menu_day"
+                android:drawableTint="@color/neon_blue"
+                android:drawablePadding="12dp"
+                android:gravity="center_vertical" />
+
+            <TextView
+                android:id="@+id/tvCurrentDayInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/reset_current_day_desc"
+                android:textColor="@color/text_secondary"
+                android:textSize="13sp"
+                android:layout_marginTop="4dp"
+                android:layout_marginStart="36dp" />
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Reset Custom Day Range -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardResetDayRange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/dark_surface_variant"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="12dp"
+        android:layout_marginBottom="12dp"
+        android:clickable="true"
+        android:focusable="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/reset_day_range"
+                android:textColor="@color/text_primary"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:drawableStart="@android:drawable/ic_menu_week"
+                android:drawableTint="@color/neon_blue"
+                android:drawablePadding="12dp"
+                android:gravity="center_vertical" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/reset_day_range_desc"
+                android:textColor="@color/text_secondary"
+                android:textSize="13sp"
+                android:layout_marginTop="4dp"
+                android:layout_marginStart="36dp" />
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Reset All Tournament Data -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardResetAll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="#442222"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="12dp"
+        android:layout_marginBottom="24dp"
+        android:clickable="true"
+        android:focusable="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/reset_all_tournament"
+                android:textColor="#FF6666"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:drawableStart="@android:drawable/ic_menu_close_clear_cancel"
+                android:drawableTint="#FF6666"
+                android:drawablePadding="12dp"
+                android:gravity="center_vertical" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/reset_all_tournament_desc"
+                android:textColor="#FFAAAA"
+                android:textSize="13sp"
+                android:layout_marginTop="4dp"
+                android:layout_marginStart="36dp" />
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Cancel Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnCancel"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="@string/btn_cancel"
+        android:textSize="16sp"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        app:strokeColor="@color/neon_blue"
+        android:textColor="@color/neon_blue" />
+
+</LinearLayout>

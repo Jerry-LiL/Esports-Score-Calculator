@@ -1,0 +1,249 @@
+<resources>
+    <string name="app_name">LiL Ranker</string>
+    
+    <!-- Main Activity -->
+    <string name="welcome_title">LiL Ranker</string>
+    <string name="welcome_subtitle">Esports Tournament Manager</string>
+    <string name="btn_configure">Configure Tournament</string>
+    <string name="btn_enter_match">Enter Match Results</string>
+    <string name="btn_view_leaderboard">View Leaderboard</string>
+    <string name="no_config_warning">Please configure tournament settings first</string>
+    
+    <!-- Config Activity -->
+    <string name="config_title">Tournament Configuration</string>
+    <string name="label_total_days">Total Days</string>
+    <string name="label_matches_per_day">Matches Per Day</string>
+    <string name="label_points_per_kill">Points Per Kill</string>
+    <string name="label_rank_points">Rank Points</string>
+    <string name="hint_total_days">Enter number of days</string>
+    <string name="hint_points_per_kill">Points for each kill</string>
+    <string name="hint_rank_position">Rank</string>
+    <string name="hint_rank_points">Points</string>
+    <string name="btn_save_config">Done</string>
+    <string name="btn_add_rank">Add Rank</string>
+    <string name="config_saved">Configuration saved successfully</string>
+    <string name="config_error">Please fill all required fields</string>
+    <string name="rank_points_info">Set points for ranks 1-25 (default: 0)</string>
+    
+    <!-- Match Entry Activity -->
+    <string name="match_entry_title">Enter Match Results</string>
+    <string name="label_select_day">Select Day</string>
+    <string name="label_select_match">Select Match</string>
+    <string name="match_1">Match 1</string>
+    <string name="match_2">Match 2</string>
+    <string name="label_team_number">Team #</string>
+    <string name="label_kills">Kills</string>
+    <string name="label_rank">Rank</string>
+    <string name="btn_save_results">Done</string>
+    <string name="results_saved">Match results saved successfully</string>
+    <string name="auto_saving">Auto-saving…</string>
+    <string name="results_error">Please enter valid data for all teams</string>
+    <string name="day_format">Day %d</string>
+    
+    <!-- Leaderboard Activity -->
+    <string name="leaderboard_title">Tournament Leaderboard</string>
+    <string name="filter_by_day">Filter by Day:</string>
+    <string name="all_days">All Days</string>
+    <string name="header_team">Team</string>
+    <string name="header_points">Points</string>
+    <string name="header_kills">Kills</string>
+    <string name="header_matches">Matches</string>
+    <string name="no_data">No tournament data available</string>
+    <string name="team_format">Team %d</string>
+    
+    <!-- Reset Dialog -->
+    <string name="btn_reset">Reset</string>
+    <string name="btn_penalty">Penalty</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="reset_title">Reset Options</string>
+    <string name="reset_subtitle">Choose what data you want to reset</string>
+    
+    <string name="reset_current_match">Reset Current Match</string>
+    <string name="reset_current_match_desc">Clear data for Match %1$d on Day %2$d</string>
+    
+    <string name="reset_current_day">Reset Current Day</string>
+    <string name="reset_current_day_desc">Clear all matches (Match 1 &amp; 2) on Day %d</string>
+    
+    <string name="reset_day_range">Reset Day Range</string>
+    <string name="reset_day_range_desc">Clear all matches for selected days</string>
+    
+    <string name="reset_all_tournament">⚠️ Reset All Tournament Data</string>
+    <string name="reset_all_tournament_desc">Delete ALL matches from ALL days (cannot be undone!)</string>
+    
+    <string name="select_day_range">Select Day Range to Reset</string>
+    <string name="start_day">Start Day</string>
+    <string name="end_day">End Day</string>
+    
+    <!-- Reset Confirmations -->
+    <string name="confirm_reset_match">Reset Match %1$d on Day %2$d? This will delete all team data for this match.</string>
+    <string name="confirm_reset_day">Reset all matches on Day %d? This will delete Match 1 and Match 2 data.</string>
+    <string name="confirm_reset_range">Reset Days %1$d to %2$d? This will delete all matches for these %3$d days.</string>
+    <string name="confirm_reset_all">⚠️ DELETE ALL TOURNAMENT DATA?\n\nThis will erase:\n• All %d days of data\n• All matches (Match 1 &amp; 2)\n• All team results\n\nThis action CANNOT be undone!</string>
+    
+    <string name="reset_success">Successfully reset: %s</string>
+    <string name="reset_error">Invalid day range selected</string>
+    
+    <!-- Common -->
+    <string name="btn_back">Back</string>
+    <string name="loading">Loading…</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    
+    <!-- Language -->
+    <string name="language_switcher">Language Switcher</string>
+    <string name="select_language">Select Language</string>
+    <string name="language_english">English</string>
+    <string name="language_persian">فارسی (Persian)</string>
+    
+    <!-- Login Activity -->
+    <string name="login_subtitle">Enter Access Key</string>
+    <string name="login_access_key_hint">Access Key</string>
+    <string name="login_validate_button">Validate Key</string>
+    <string name="login_footer">Powered by LiL Ranker © 2025</string>
+    
+    <!-- Additional hardcoded strings -->
+    <string name="sort_by">Sort By</string>
+    <string name="unsaved_changes">Unsaved Changes</string>
+    <string name="unsaved_changes_message">You have unsaved changes. Do you want to save before exiting?</string>
+    <string name="manual_score">Manual Score</string>
+    <string name="penalty">Penalty</string>
+    <string name="menu">Menu</string>
+    <string name="save">Save</string>
+    <string name="reset">Reset</string>
+    
+    <!-- Dialog strings -->
+    <string name="total_teams">Total Teams</string>
+    <string name="total_teams_hint">1-25</string>
+    <string name="start">Start</string>
+    <string name="cancel">Cancel</string>
+    <string name="rank_based_entry">Rank-Based Entry</string>
+    <string name="teams_participating">%d Teams Participating</string>
+    <string name="rank">Rank</string>
+    <string name="team_number">Team #</string>
+    <string name="kills">Kills</string>
+    <string name="apply">Apply</string>
+    <string name="previous">Previous</string>
+    <string name="next">Next</string>
+    <string name="cancel_entry">Cancel Entry</string>
+    <string name="rank_of">Rank %1$d of %2$d</string>
+    <string name="rank_number">Rank #%d</string>
+    <string name="team_slot_hint">Team Slot Number (1-25)</string>
+    <string name="kills_hint">Kills</string>
+    
+    <!-- Reset Dialog Strings -->
+    <string name="reset_tournament_data">Reset Tournament Data</string>
+    <string name="choose_reset_data">Choose what data you want to reset</string>
+    <string name="reset_current_day_title">Reset Current Day</string>
+    <string name="reset_current_day_description">Choose which matches to reset for the current day</string>
+    <string name="reset_day_range_title">Reset Day Range</string>
+    <string name="reset_day_range_description">Select specific days with entered data to reset</string>
+    <string name="reset_all_title">⚠️ Reset All Tournament Data</string>
+    <string name="reset_all_description">This will permanently delete all match results for all days</string>
+        <string name="close">Close</string>
+    
+    <!-- Select Matches Dialog -->
+    <string name="reset_day">Reset Day %d</string>
+    <string name="select_matches_to_reset">Select which matches to reset</string>
+    <string name="reset_selected">Reset Selected</string>
+    
+    <!-- Select Day Range Dialog -->
+    <string name="select_days_to_reset">Select Days to Reset</string>
+    <string name="only_days_with_data_shown">Only days with entered data are shown</string>
+    <string name="reset_selected_days">Reset Selected Days</string>
+    
+    <!-- Team Grouping Dialog -->
+    <string name="team_grouping">Team Grouping</string>
+    <string name="team_grouping_description">Group teams together to combine their scores</string>
+    <string name="team_numbers_to_group_hint">Team Numbers to Group (e.g., 7, 19)</string>
+    <string name="main_team_number_hint">Main Team Number (Primary)</string>
+    <string name="existing_groups">Existing Groups:</string>
+    <string name="add_group">Add Group</string>
+    <string name="delete">Delete</string>
+    
+    <!-- Debug Dialog -->
+    <string name="debug_info">Debug Info</string>
+    <string name="copy">Copy</string>
+    
+    <!-- Toast Messages -->
+    <string name="error_selecting_match">Error selecting match: %s</string>
+    <string name="no_unsaved_data">No unsaved data to save</string>
+    <string name="configuration_not_loaded">Configuration not loaded</string>
+    <string name="error_saving_data">Error saving data: %s</string>
+    <string name="unsaved_changes_count">You have unsaved data for %d match(es). Save before exiting?</string>
+    <string name="enter_number_of_teams">Please enter the number of teams</string>
+    <string name="enter_valid_number">Please enter a valid number between 1 and %d</string>
+    <string name="no_data_for_day">No data entered for Day %d yet</string>
+    <string name="select_at_least_one_match">Please select at least one match</string>
+    <string name="no_data_entered_yet">No data entered yet for any day</string>
+    <string name="select_at_least_one_day">Please select at least one day</string>
+    <string name="enter_day_number">Please enter day number</string>
+    <string name="enter_match_number">Please enter match number</string>
+    <string name="enter_team_number">Please enter team number</string>
+    <string name="enter_penalty_points">Please enter penalty points</string>
+    <string name="day_number_range">Day number must be between 1 and %d</string>
+    <string name="match_number_range">Match number must be between 1 and %d</string>
+    <string name="team_number_range">Team number must be between 1 and %d</string>
+    <string name="penalty_must_be_positive">Penalty points must be 0 or greater</string>
+    <string name="error_showing_penalty_dialog">Error showing penalty dialog: %s</string>
+    <string name="enter_new_score">Please enter new score</string>
+    <string name="score_must_be_positive">Score must be 0 or greater</string>
+    <string name="maximum_ranks_allowed">Maximum 25 ranks allowed</string>
+    <string name="reset_configuration">Reset Configuration</string>
+    <string name="reset_config_confirmation">Are you sure you want to reset all configuration settings? This will clear:\n\n• Total Days\n• Points Per Kill\n• All Rank Points\n\nThis will NOT delete match results.</string>
+    <string name="config_reset_success">Configuration reset successfully</string>
+    <string name="rank_already_configured">Rank %d is already configured</string>
+    <string name="error_adding_rank">Error adding rank entry: %s</string>
+    <string name="fill_required_fields">⚠️ Please fill all required fields (Total Days, Matches Per Day, Points Per Kill)</string>
+    <string name="total_days_minimum">⚠️ Total Days must be at least 1</string>
+    <string name="matches_per_day_minimum">⚠️ Matches Per Day must be at least 1</string>
+    <string name="points_per_kill_minimum">⚠️ Points Per Kill must be 0 or greater</string>
+    <string name="high_matches_per_day">High Matches Per Day</string>
+    <string name="high_matches_confirmation">You\'re setting %d matches per day. This is quite high. Are you sure?</string>
+    <string name="error_saving_config">Error saving configuration: %s</string>
+    <string name="data_will_be_hidden">⚠️ Data Will Be Hidden</string>
+    <string name="reducing_matches_warning">You are reducing matches per day from %1$d to %2$d.\n\n</string>
+    <string name="invalid_rank_value">⚠️ Invalid rank value in rank points</string>
+    <string name="rank_points_must_be_positive">⚠️ Rank points must be 0 or greater</string>
+    <string name="error_saving">Error saving: %s</string>
+    <string name="config_saved_success">✅ Configuration saved successfully!</string>
+    <string name="error_message">❌ Error: %s</string>
+    <string name="enter_team_numbers">Please enter team numbers</string>
+    <string name="enter_main_team_number">Please enter main team number</string>
+    <string name="main_team_range">Main team must be between 1 and 25</string>
+    <string name="enter_valid_team_numbers">Please enter valid team numbers (1-25)</string>
+    <string name="main_team_not_in_alias">Main team should not be in the alias list</string>
+    
+    <!-- Sorting Options -->
+    <string name="sort_by_points">By Points (Default)</string>
+    <string name="sort_by_team_number">By Team Number</string>
+    
+    <!-- Dialog Buttons -->
+    <string name="yes_continue">Yes, Continue</string>
+    <string name="dont_save">Don\'t Save</string>
+    <string name="save_and_exit">Save &amp; Exit</string>
+    <string name="exit_without_saving">Exit Without Saving?</string>
+    <string name="all_unsaved_changes_lost">All unsaved changes will be lost. Continue?</string>
+    
+    <!-- Team Grouping Success -->
+    <string name="team_group_created">✅ Team group created: Team %1$d ← %2$s</string>
+    <string name="error_creating_group">Error creating group: %s</string>
+    
+    <!-- Config Activity Buttons -->
+    <string name="btn_team_grouping">👥 Team Grouping</string>
+    <string name="btn_add_rank_label">➕ Add Rank</string>
+    <string name="btn_reset_config">🗑️ Reset</string>
+    <string name="btn_save_label">💾 Save</string>
+    
+    <!-- Penalty Dialog -->
+    <string name="apply_penalty">Apply Penalty</string>
+    <string name="penalty_description">Select the specific day and match for this penalty</string>
+    <string name="apply_penalty_button">Apply Penalty</string>
+    
+    <!-- Manual Score Dialog -->
+    <string name="manual_score_adjustment">Manual Score Adjustment</string>
+    <string name="manual_score_description">Manually set a team\'s total score for a specific match</string>
+    <string name="apply_score">Apply Score</string>
+    
+    <!-- Warning Symbol -->
+    <string name="warning_symbol">⚠️</string>
+</resources>

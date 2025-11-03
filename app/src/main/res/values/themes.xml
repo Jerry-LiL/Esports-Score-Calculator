@@ -1,0 +1,68 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme with AMOLED Pure Black -->
+    <style name="Base.Theme.LiLRanker" parent="Theme.Material3.Dark.NoActionBar">
+        <!-- Primary colors - neon blue for main UI elements -->
+        <item name="colorPrimary">@color/neon_blue</item>
+        <item name="colorPrimaryVariant">@color/neon_blue_dark</item>
+        <item name="colorOnPrimary">@color/black</item>
+        
+        <!-- Secondary colors - keep it simple -->
+        <item name="colorSecondary">@color/neon_blue</item>
+        <item name="colorSecondaryVariant">@color/neon_blue_dark</item>
+        <item name="colorOnSecondary">@color/black</item>
+        
+        <!-- Background - pure black for AMOLED -->
+        <item name="android:colorBackground">@color/dark_background</item>
+        <item name="colorSurface">@color/dark_surface</item>
+        <item name="colorOnBackground">@color/text_primary</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        
+        <!-- Radio button and control colors - NO blue highlights -->
+        <item name="colorControlActivated">@color/text_primary</item>
+        <item name="colorControlNormal">@color/text_secondary</item>
+        
+        <!-- Status and navigation bars - pure black -->
+        <item name="android:statusBarColor">@color/dark_background</item>
+        <item name="android:navigationBarColor">@color/dark_background</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+
+    <style name="Theme.LiLRanker" parent="Base.Theme.LiLRanker" />
+    
+    <!-- Button Style - neon blue on black -->
+    <style name="NeonButton" parent="Widget.Material3.Button">
+        <item name="backgroundTint">@color/neon_blue</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="cornerRadius">8dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    
+    <!-- Card Style - dark surface on black -->
+    <style name="DarkCard" parent="Widget.Material3.CardView.Elevated">
+        <item name="cardBackgroundColor">@color/dark_surface</item>
+        <item name="cardElevation">8dp</item>
+        <item name="cardCornerRadius">12dp</item>
+        <item name="contentPadding">16dp</item>
+    </style>
+    
+    <!-- EditText Style - white labels with gray borders always visible -->
+    <style name="NeonEditText" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/input_box_stroke_color</item>
+        <item name="hintTextColor">@color/text_primary</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textColorHint">@color/text_secondary</item>
+        <item name="boxStrokeWidth">2dp</item>
+        <item name="boxStrokeWidthFocused">2dp</item>
+        <item name="boxBackgroundColor">@color/dark_background</item>
+    </style>
+    
+    <!-- Modern Spinner Style with animations -->
+    <style name="ModernSpinner" parent="Widget.AppCompat.Spinner">
+        <item name="android:popupAnimationStyle">@style/SpinnerPopupAnimation</item>
+    </style>
+    
+    <style name="SpinnerPopupAnimation" parent="Animation.AppCompat.DropDownUp">
+        <item name="android:windowEnterAnimation">@anim/dropdown_enter</item>
+        <item name="android:windowExitAnimation">@anim/dropdown_exit</item>
+    </style>
+</resources>

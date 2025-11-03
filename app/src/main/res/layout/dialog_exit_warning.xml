@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="24dp"
+    app:cardBackgroundColor="#FF000000"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Warning Icon and Title -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="⚠️"
+                android:textSize="36sp"
+                android:layout_marginEnd="16dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/unsaved_changes"
+                android:textColor="@color/neon_blue"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <!-- Message -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/unsaved_changes_message"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp"
+            android:lineSpacingExtra="4dp"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Buttons Side by Side -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end">
+
+            <!-- No Button (Left - Red) -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnExitWithoutSaving"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_weight="1"
+                android:text="@string/no"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                app:strokeColor="#FF5555"
+                app:strokeWidth="2dp"
+                android:textColor="#FF5555"
+                app:cornerRadius="8dp"
+                android:layout_marginEnd="8dp" />
+
+            <!-- Yes Button (Right - Green) -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSaveAndExit"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_weight="1"
+                android:text="@string/yes"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                app:strokeColor="#55FF55"
+                app:strokeWidth="2dp"
+                android:textColor="#55FF55"
+                app:cornerRadius="8dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
