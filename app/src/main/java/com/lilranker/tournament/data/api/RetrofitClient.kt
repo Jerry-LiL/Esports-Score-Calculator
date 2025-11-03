@@ -15,7 +15,8 @@ object RetrofitClient {
     // For production: "https://your-backend.herokuapp.com/" or your cloud server
     // For development with real device: Use your computer's IP
     // For development with emulator: "http://10.0.2.2:3000/"
-    private const val BASE_URL = "http://192.168.1.5:3000/"
+    // Use deployed backend for production
+    private const val BASE_URL = "https://esports-score-calculator.onrender.com/"
     
     // Alternative: Use BuildConfig to switch between dev and prod
     // private val BASE_URL = if (BuildConfig.DEBUG) {
