@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingVertical="8dp"
+    android:paddingHorizontal="12dp"
+    android:background="@color/dark_surface_variant"
+    android:layout_marginBottom="4dp"
+    android:minHeight="48dp"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:id="@+id/tvRank"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="@color/neon_blue"
+        android:textSize="15sp"
+        android:text="1"
+        android:gravity="center"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etTeamNumber"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:inputType="number"
+        android:textColor="@color/text_primary"
+        android:textColorHint="@color/text_hint"
+        android:textSize="15sp"
+        android:hint="-"
+        android:gravity="center"
+        android:background="@android:color/transparent"
+        android:paddingVertical="4dp"
+        android:paddingHorizontal="8dp"
+        android:maxLines="1"
+        android:imeOptions="actionNext" />
+
+    <EditText
+        android:id="@+id/etKills"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:inputType="number"
+        android:textColor="@color/text_primary"
+        android:textColorHint="@color/text_hint"
+        android:textSize="15sp"
+        android:hint="-"
+        android:gravity="center"
+        android:background="@android:color/transparent"
+        android:paddingVertical="4dp"
+        android:paddingHorizontal="8dp"
+        android:maxLines="1"
+        android:imeOptions="actionNext" />
+
+</LinearLayout>

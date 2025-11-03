@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App name stays in English -->
+    <string name="app_name">LiL Ranker</string>
+    
+    <!-- Main Activity -->
+    <string name="welcome_title">LiL Ranker</string>
+    <string name="welcome_subtitle">مدیریت تورنومنت ایسپورت</string>
+    <string name="btn_configure">تنظیم تورنومنت</string>
+    <string name="btn_enter_match">ورود نتایج بازی</string>
+    <string name="btn_view_leaderboard">مشاهده جدول رتبه‌بندی</string>
+    <string name="no_config_warning">لطفاً ابتدا تنظیمات تورنومنت را انجام دهید</string>
+    
+    <!-- Config Activity -->
+    <string name="config_title">تنظیمات تورنومنت</string>
+    <string name="label_total_days">تعداد کل روزها</string>
+    <string name="label_matches_per_day">تعداد بازی‌ها در هر روز</string>
+    <string name="label_points_per_kill">امتیاز هر کیل</string>
+    <string name="label_rank_points">امتیازات رتبه</string>
+    <string name="hint_total_days">تعداد روزها را وارد کنید</string>
+    <string name="hint_points_per_kill">امتیاز برای هر کیل</string>
+    <string name="hint_rank_position">رتبه</string>
+    <string name="hint_rank_points">امتیاز</string>
+    <string name="btn_save_config">تمام</string>
+    <string name="btn_add_rank">افزودن رتبه</string>
+    <string name="config_saved">تنظیمات با موفقیت ذخیره شد</string>
+    <string name="config_error">لطفاً تمام فیلدهای الزامی را پر کنید</string>
+    <string name="rank_points_info">امتیاز رتبه‌های ۱ تا ۲۵ را تعیین کنید (پیش‌فرض: ۰)</string>
+    
+    <!-- Match Entry Activity -->
+    <string name="match_entry_title">ورود نتایج بازی</string>
+    <string name="label_select_day">انتخاب روز</string>
+    <string name="label_select_match">انتخاب بازی</string>
+    <string name="match_1">بازی ۱</string>
+    <string name="match_2">بازی ۲</string>
+    <string name="label_team_number">تیم #</string>
+    <string name="label_kills">کیل‌ها</string>
+    <string name="label_rank">رتبه</string>
+    <string name="btn_save_results">تمام</string>
+    <string name="results_saved">نتایج بازی با موفقیت ذخیره شد</string>
+    <string name="auto_saving">در حال ذخیره خودکار…</string>
+    <string name="results_error">لطفاً اطلاعات معتبر برای همه تیم‌ها وارد کنید</string>
+    <string name="day_format">روز %d</string>
+    
+    <!-- Leaderboard Activity -->
+    <string name="leaderboard_title">جدول رتبه‌بندی تورنومنت</string>
+    <string name="filter_by_day">فیلتر بر اساس روز:</string>
+    <string name="all_days">تمام روزها</string>
+    <string name="header_team">تیم</string>
+    <string name="header_points">امتیاز</string>
+    <string name="header_kills">کیل</string>
+    <string name="header_matches">بازی‌ها</string>
+    <string name="no_data">هیچ داده‌ای موجود نیست</string>
+    <string name="team_format">تیم %d</string>
+    
+    <!-- Reset Dialog -->
+    <string name="btn_reset">بازنشانی</string>
+    <string name="btn_penalty">جریمه</string>
+    <string name="btn_cancel">لغو</string>
+    <string name="reset_title">گزینه‌های بازنشانی</string>
+    <string name="reset_subtitle">داده‌هایی که می‌خواهید بازنشانی کنید را انتخاب کنید</string>
+    
+    <string name="reset_current_match">بازنشانی بازی فعلی</string>
+    <string name="reset_current_match_desc">پاک کردن داده‌های بازی %1$d در روز %2$d</string>
+    
+    <string name="reset_current_day">بازنشانی روز فعلی</string>
+    <string name="reset_current_day_desc">پاک کردن تمام بازی‌ها (بازی ۱ و ۲) در روز %d</string>
+    
+    <string name="reset_day_range">بازنشانی بازه روزها</string>
+    <string name="reset_day_range_desc">پاک کردن تمام بازی‌ها برای روزهای انتخاب شده</string>
+    
+    <string name="reset_all_tournament">⚠️ بازنشانی کل اطلاعات تورنومنت</string>
+    <string name="reset_all_tournament_desc">حذف تمام بازی‌ها از تمام روزها (غیرقابل بازگشت!)</string>
+    
+    <string name="select_day_range">بازه روز برای بازنشانی را انتخاب کنید</string>
+    <string name="start_day">روز شروع</string>
+    <string name="end_day">روز پایان</string>
+    
+    <!-- Reset Confirmations -->
+    <string name="confirm_reset_match">بازنشانی بازی %1$d در روز %2$d؟ این عملیات تمام داده‌های تیم‌ها در این بازی را حذف می‌کند.</string>
+    <string name="confirm_reset_day">بازنشانی تمام بازی‌ها در روز %d؟ این عملیات داده‌های بازی ۱ و ۲ را حذف می‌کند.</string>
+    <string name="confirm_reset_range">بازنشانی روزهای %1$d تا %2$d؟ این عملیات تمام بازی‌های این %3$d روز را حذف می‌کند.</string>
+    <string name="confirm_reset_all">⚠️ حذف کل اطلاعات تورنومنت؟\n\nاین عملیات موارد زیر را پاک می‌کند:\n• تمام %d روز اطلاعات\n• تمام بازی‌ها (بازی ۱ و ۲)\n• تمام نتایج تیم‌ها\n\nاین عملیات غیرقابل بازگشت است!</string>
+    
+    <string name="reset_success">بازنشانی موفقیت‌آمیز: %s</string>
+    <string name="reset_error">بازه روز نامعتبر انتخاب شده است</string>
+    
+    <!-- Common -->
+    <string name="btn_back">بازگشت</string>
+    <string name="loading">در حال بارگذاری…</string>
+    <string name="yes">بله</string>
+    <string name="no">خیر</string>
+    
+    <!-- Language -->
+    <string name="language_switcher">تغییر زبان</string>
+    <string name="select_language">انتخاب زبان</string>
+    <string name="language_english">English (انگلیسی)</string>
+    <string name="language_persian">فارسی</string>
+    
+    <!-- Login Activity -->
+    <string name="login_subtitle">کلید دسترسی را وارد کنید</string>
+    <string name="login_access_key_hint">کلید دسترسی</string>
+    <string name="login_validate_button">تأیید کلید</string>
+    <string name="login_footer">Powered by LiL Ranker © 2025</string>
+    
+    <!-- Additional hardcoded strings that need translation -->
+    <string name="sort_by">مرتب‌سازی بر اساس</string>
+    <string name="unsaved_changes">تغییرات ذخیره نشده</string>
+    <string name="unsaved_changes_message">شما تغییراتی ذخیره نشده دارید. آیا می‌خواهید قبل از خروج ذخیره کنید؟</string>
+    <string name="manual_score">امتیاز دستی</string>
+    <string name="penalty">جریمه</string>
+    <string name="menu">منو</string>
+    <string name="save">ذخیره</string>
+    <string name="reset">بازنشانی</string>
+    
+    <!-- Dialog strings -->
+    <string name="total_teams">تعداد کل تیم‌ها</string>
+    <string name="total_teams_hint">۱-۲۵</string>
+    <string name="start">شروع</string>
+    <string name="cancel">لغو</string>
+    <string name="rank_based_entry">ورود بر اساس رتبه</string>
+    <string name="teams_participating">%d تیم شرکت‌کننده</string>
+    <string name="rank">رتبه</string>
+    <string name="team_number">شماره تیم</string>
+    <string name="kills">کیل</string>
+    <string name="apply">اعمال</string>
+    <string name="previous">قبلی</string>
+    <string name="next">بعدی</string>
+    <string name="cancel_entry">لغو ورود</string>
+    <string name="rank_of">رتبه %1$d از %2$d</string>
+    <string name="rank_number">رتبه #%d</string>
+    <string name="team_slot_hint">شماره تیم (۱-۲۵)</string>
+    <string name="kills_hint">کیل‌ها</string>
+    
+    <!-- Reset Dialog Strings -->
+    <string name="reset_tournament_data">بازنشانی داده‌های تورنومنت</string>
+    <string name="choose_reset_data">انتخاب کنید چه داده‌هایی را می‌خواهید بازنشانی کنید</string>
+    <string name="reset_current_day_title">بازنشانی روز فعلی</string>
+    <string name="reset_current_day_description">انتخاب کنید کدام بازی‌ها را برای روز فعلی بازنشانی کنید</string>
+    <string name="reset_day_range_title">بازنشانی بازه روزها</string>
+    <string name="reset_day_range_description">انتخاب روزهای خاصی که داده وارد شده دارند برای بازنشانی</string>
+    <string name="reset_all_title">⚠️ بازنشانی تمام داده‌های تورنومنت</string>
+    <string name="reset_all_description">این عملیات به طور دائمی تمام نتایج بازی‌ها را برای تمام روزها حذف می‌کند</string>
+        <string name="close">بستن</string>
+    
+    <!-- Select Matches Dialog -->
+    <string name="reset_day">بازنشانی روز %d</string>
+    <string name="select_matches_to_reset">انتخاب کنید کدام بازی‌ها را بازنشانی کنید</string>
+    <string name="reset_selected">بازنشانی انتخاب شده‌ها</string>
+    
+    <!-- Select Day Range Dialog -->
+    <string name="select_days_to_reset">انتخاب روزها برای بازنشانی</string>
+    <string name="only_days_with_data_shown">فقط روزهایی که داده وارد شده نمایش داده می‌شوند</string>
+    <string name="reset_selected_days">بازنشانی روزهای انتخاب شده</string>
+    
+    <!-- Team Grouping Dialog -->
+    <string name="team_grouping">گروه‌بندی تیم‌ها</string>
+    <string name="team_grouping_description">گروه‌بندی تیم‌ها برای ترکیب امتیازات آنها</string>
+    <string name="team_numbers_to_group_hint">شماره تیم‌ها برای گروه‌بندی (مثال: ۷، ۱۹)</string>
+    <string name="main_team_number_hint">شماره تیم اصلی (اولویت دار)</string>
+    <string name="existing_groups">گروه‌های موجود:</string>
+    <string name="add_group">افزودن گروه</string>
+    <string name="delete">حذف</string>
+    
+    <!-- Debug Dialog -->
+    <string name="debug_info">اطلاعات دیباگ</string>
+    <string name="copy">کپی</string>
+    
+    <!-- Toast Messages -->
+    <string name="error_selecting_match">خطا در انتخاب بازی: %s</string>
+    <string name="no_unsaved_data">هیچ داده ذخیره نشده‌ای وجود ندارد</string>
+    <string name="configuration_not_loaded">تنظیمات بارگذاری نشده است</string>
+    <string name="error_saving_data">خطا در ذخیره داده: %s</string>
+    <string name="unsaved_changes_count">شما داده ذخیره نشده برای %d بازی دارید. قبل از خروج ذخیره شود؟</string>
+    <string name="enter_number_of_teams">لطفاً تعداد تیم‌ها را وارد کنید</string>
+    <string name="enter_valid_number">لطفاً یک عدد معتبر بین ۱ تا %d وارد کنید</string>
+    <string name="no_data_for_day">هنوز هیچ داده‌ای برای روز %d وارد نشده است</string>
+    <string name="select_at_least_one_match">لطفاً حداقل یک بازی را انتخاب کنید</string>
+    <string name="no_data_entered_yet">هنوز هیچ داده‌ای برای هیچ روزی وارد نشده است</string>
+    <string name="select_at_least_one_day">لطفاً حداقل یک روز را انتخاب کنید</string>
+    <string name="enter_day_number">لطفاً شماره روز را وارد کنید</string>
+    <string name="enter_match_number">لطفاً شماره بازی را وارد کنید</string>
+    <string name="enter_team_number">لطفاً شماره تیم را وارد کنید</string>
+    <string name="enter_penalty_points">لطفاً امتیاز جریمه را وارد کنید</string>
+    <string name="day_number_range">شماره روز باید بین ۱ تا %d باشد</string>
+    <string name="match_number_range">شماره بازی باید بین ۱ تا %d باشد</string>
+    <string name="team_number_range">شماره تیم باید بین ۱ تا %d باشد</string>
+    <string name="penalty_must_be_positive">امتیاز جریمه باید ۰ یا بیشتر باشد</string>
+    <string name="error_showing_penalty_dialog">خطا در نمایش پنجره جریمه: %s</string>
+    <string name="enter_new_score">لطفاً امتیاز جدید را وارد کنید</string>
+    <string name="score_must_be_positive">امتیاز باید ۰ یا بیشتر باشد</string>
+    <string name="maximum_ranks_allowed">حداکثر ۲۵ رتبه مجاز است</string>
+    <string name="reset_configuration">بازنشانی تنظیمات</string>
+    <string name="reset_config_confirmation">آیا مطمئن هستید که می‌خواهید تمام تنظیمات را بازنشانی کنید؟ این عملیات موارد زیر را پاک می‌کند:\n\n• تعداد کل روزها\n• امتیاز هر کیل\n• تمام امتیازات رتبه\n\nاین عملیات نتایج بازی‌ها را حذف نمی‌کند.</string>
+    <string name="config_reset_success">تنظیمات با موفقیت بازنشانی شد</string>
+    <string name="rank_already_configured">رتبه %d قبلاً تنظیم شده است</string>
+    <string name="error_adding_rank">خطا در افزودن رتبه: %s</string>
+    <string name="fill_required_fields">⚠️ لطفاً تمام فیلدهای الزامی را پر کنید (تعداد کل روزها، تعداد بازی‌ها در روز، امتیاز هر کیل)</string>
+    <string name="total_days_minimum">⚠️ تعداد کل روزها باید حداقل ۱ باشد</string>
+    <string name="matches_per_day_minimum">⚠️ تعداد بازی‌ها در روز باید حداقل ۱ باشد</string>
+    <string name="points_per_kill_minimum">⚠️ امتیاز هر کیل باید ۰ یا بیشتر باشد</string>
+    <string name="high_matches_per_day">تعداد بازی‌های زیاد در روز</string>
+    <string name="high_matches_confirmation">شما در حال تنظیم %d بازی در روز هستید. این تعداد بسیار زیاد است. آیا مطمئن هستید؟</string>
+    <string name="error_saving_config">خطا در ذخیره تنظیمات: %s</string>
+    <string name="data_will_be_hidden">⚠️ داده‌ها پنهان خواهند شد</string>
+    <string name="reducing_matches_warning">شما در حال کاهش تعداد بازی‌ها در روز از %1$d به %2$d هستید.\n\n</string>
+    <string name="invalid_rank_value">⚠️ مقدار نامعتبر در امتیازات رتبه</string>
+    <string name="rank_points_must_be_positive">⚠️ امتیازات رتبه باید ۰ یا بیشتر باشد</string>
+    <string name="error_saving">خطا در ذخیره: %s</string>
+    <string name="config_saved_success">✅ تنظیمات با موفقیت ذخیره شد!</string>
+    <string name="error_message">❌ خطا: %s</string>
+    <string name="enter_team_numbers">لطفاً شماره تیم‌ها را وارد کنید</string>
+    <string name="enter_main_team_number">لطفاً شماره تیم اصلی را وارد کنید</string>
+    <string name="main_team_range">تیم اصلی باید بین ۱ تا ۲۵ باشد</string>
+    <string name="enter_valid_team_numbers">لطفاً شماره تیم‌های معتبر (۱-۲۵) وارد کنید</string>
+    <string name="main_team_not_in_alias">تیم اصلی نباید در لیست تیم‌های گروه باشد</string>
+    
+    <!-- Sorting Options -->
+    <string name="sort_by_points">بر اساس امتیاز (پیش‌فرض)</string>
+    <string name="sort_by_team_number">بر اساس شماره تیم</string>
+    
+    <!-- Dialog Buttons -->
+    <string name="yes_continue">بله، ادامه</string>
+    <string name="dont_save">ذخیره نشود</string>
+    <string name="save_and_exit">ذخیره و خروج</string>
+    <string name="exit_without_saving">خروج بدون ذخیره؟</string>
+    <string name="all_unsaved_changes_lost">تمام تغییرات ذخیره نشده از بین می‌روند. ادامه می‌دهید؟</string>
+    
+    <!-- Team Grouping Success -->
+    <string name="team_group_created">✅ گروه تیمی ایجاد شد: تیم %1$d ← %2$s</string>
+    <string name="error_creating_group">خطا در ایجاد گروه: %s</string>
+    
+    <!-- Config Activity Buttons -->
+    <string name="btn_team_grouping">👥 گروه‌بندی تیم‌ها</string>
+    <string name="btn_add_rank_label">➕ افزودن رتبه</string>
+    <string name="btn_reset_config">🗑️ بازنشانی</string>
+    <string name="btn_save_label">💾 ذخیره</string>
+    
+    <!-- Penalty Dialog -->
+    <string name="apply_penalty">اعمال جریمه</string>
+    <string name="penalty_description">روز و بازی مشخص برای این جریمه را انتخاب کنید</string>
+    <string name="apply_penalty_button">اعمال جریمه</string>
+    
+    <!-- Manual Score Dialog -->
+    <string name="manual_score_adjustment">تنظیم دستی امتیاز</string>
+    <string name="manual_score_description">امتیاز کل یک تیم را برای یک بازی خاص به صورت دستی تنظیم کنید</string>
+    <string name="apply_score">اعمال امتیاز</string>
+    
+    <!-- Warning Symbol -->
+    <string name="warning_symbol">⚠️</string>
+</resources>

@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LiL Ranker - User Guide (English)</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #e0e0e0;
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: #1e1e1e;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 0 40px rgba(255, 0, 0, 0.3);
+        }
+        
+        h1 {
+            color: #ff0000;
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 3em;
+            text-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+        }
+        
+        .subtitle {
+            text-align: center;
+            color: #888;
+            margin-bottom: 40px;
+            font-size: 1.2em;
+        }
+        
+        h2 {
+            color: #ff0000;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #ff0000;
+            font-size: 2em;
+        }
+        
+        h3 {
+            color: #ff3333;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+        
+        h4 {
+            color: #ff6666;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+        
+        p, li {
+            margin-bottom: 12px;
+            color: #d0d0d0;
+        }
+        
+        ul, ol {
+            margin-left: 30px;
+            margin-bottom: 20px;
+        }
+        
+        .feature-box {
+            background: #2a2a2a;
+            border-left: 4px solid #ff0000;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+        
+        .warning-box {
+            background: #3a2a2a;
+            border-left: 4px solid #ff6600;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+        
+        .tip-box {
+            background: #2a3a2a;
+            border-left: 4px solid #00ff00;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+        
+        .screen-layout {
+            background: #0a0a0a;
+            border: 2px solid #444;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            font-family: 'Courier New', monospace;
+            white-space: pre-wrap;
+            color: #0f0;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: #2a2a2a;
+        }
+        
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border: 1px solid #444;
+        }
+        
+        th {
+            background: #ff0000;
+            color: white;
+            font-weight: bold;
+        }
+        
+        tr:hover {
+            background: #333;
+        }
+        
+        .button-example {
+            display: inline-block;
+            background: #ff0000;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 5px;
+            font-weight: bold;
+        }
+        
+        .step-number {
+            display: inline-block;
+            background: #ff0000;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 30px;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        
+        .emoji {
+            font-size: 1.3em;
+        }
+        
+        code {
+            background: #333;
+            padding: 2px 6px;
+            border-radius: 3px;
+            color: #ff6666;
+            font-family: 'Courier New', monospace;
+        }
+        
+        .toc {
+            background: #2a2a2a;
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 40px;
+        }
+        
+        .toc h2 {
+            margin-top: 0;
+        }
+        
+        .toc ul {
+            list-style: none;
+            margin-left: 0;
+        }
+        
+        .toc li {
+            margin: 10px 0;
+        }
+        
+        .toc a {
+            color: #ff3333;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .toc a:hover {
+            color: #ff6666;
+        }
+        
+        @media print {
+            body {
+                background: white;
+                color: black;
+            }
+            .container {
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎮 LiL Ranker</h1>
+        <div class="subtitle">Esports Tournament Management App - Complete User Guide</div>
+        
+        <div class="toc">
+            <h2>📑 Table of Contents</h2>
+            <ul>
+                <li><a href="#introduction">1. Introduction</a></li>
+                <li><a href="#getting-started">2. Getting Started</a></li>
+                <li><a href="#login">3. Login & Authentication</a></li>
+                <li><a href="#configuration">4. Tournament Configuration</a></li>
+                <li><a href="#match-entry">5. Match Entry</a></li>
+                <li><a href="#leaderboard">6. Viewing Leaderboard</a></li>
+                <li><a href="#advanced">7. Advanced Features</a></li>
+                <li><a href="#troubleshooting">8. Troubleshooting</a></li>
+            </ul>
+        </div>
+
+        <h2 id="introduction">1. Introduction</h2>
+        
+        <h3>Features</h3>
+        <ul>
+            <li><span class="emoji">🔐</span> <strong>Secure Authentication:</strong> Access key system</li>
+            <li><span class="emoji">⚙️</span> <strong>Flexible Configuration:</strong> Customize days, matches, scoring rules</li>
+            <li><span class="emoji">📊</span> <strong>Team Tracking:</strong> Track up to 25 teams across multiple days</li>
+            <li><span class="emoji">🎯</span> <strong>Multiple Entry Modes:</strong> Rank-based or kill-based entry</li>
+            <li><span class="emoji">🏆</span> <strong>Leaderboard:</strong> Filter by day or view overall standings</li>
+            <li><span class="emoji">💾</span> <strong>Data Storage:</strong> All data saved locally on device</li>
+        </ul>
+
+        <h2 id="getting-started">2. Getting Started</h2>
+
+        <div class="tip-box">
+            <h4>💡 First-Time Setup</h4>
+            <p>Before using the app, make sure you have received a valid access key from your tournament administrator. Each key can only be used once!</p>
+        </div>
+
+        <h2 id="login">3. Login & Authentication</h2>
+
+        <h3>Step 1: Launch the App</h3>
+        <p>When you first open LiL Ranker, you'll see the login screen with a dark background and the app logo.</p>
+
+        <h3>Step 2: Enter Your Access Key</h3>
+        <ol>
+            <li>Tap on the <strong>Access Key</strong> input field</li>
+            <li>Enter the access key provided to you by your tournament administrator</li>
+            <li>Tap the <strong>"Validate Key"</strong> button</li>
+        </ol>
+
+        <div class="warning-box">
+            <h4>⚠️ Important Notes</h4>
+            <ul>
+                <li>Each access key can only be used <strong>once</strong></li>
+                <li>Keys are tied to your specific device</li>
+                <li>You need internet connection for first-time login</li>
+                <li>Your session lasts for the configured duration (default: 30 days)</li>
+            </ul>
+        </div>
+
+        <h3>Step 3: Successful Login</h3>
+        <p>After validation, you'll automatically be taken to the main menu. Your session is now active!</p>
+
+        <h3>Session Management</h3>
+        <ul>
+            <li><strong>Session Duration:</strong> Your session remains active for the configured time (typically 30 days)</li>
+            <li><strong>Auto-Logout:</strong> You'll be automatically logged out when session expires</li>
+            <li><strong>Data Preservation:</strong> All tournament data remains saved even after logout</li>
+        </ul>
+
+        <h2 id="configuration">4. Tournament Configuration</h2>
+
+        <div class="feature-box">
+            <h3>Before You Start</h3>
+            <p>You <strong>must</strong> configure your tournament settings before entering any match data. This sets up the scoring system and tournament structure.</p>
+        </div>
+
+        <h3>Accessing Configuration</h3>
+        <ol>
+            <li>From the main menu, tap <span class="button-example">Configure Tournament</span></li>
+            <li>You'll see the configuration screen</li>
+        </ol>
+
+        <h3>Configuration Options</h3>
+
+        <h4>1. Total Days</h4>
+        <p>Enter the total number of days your tournament will run.</p>
+        <ul>
+            <li>Example: If your tournament runs for 5 days, enter <code>5</code></li>
+            <li>Minimum: 1 day</li>
+        </ul>
+
+        <h4>2. Matches Per Day</h4>
+        <p>Enter how many matches will be played each day.</p>
+        <ul>
+            <li>Example: If you play 2 matches per day, enter <code>2</code></li>
+            <li>Minimum: 1 match</li>
+        </ul>
+
+        <h4>3. Points Per Kill</h4>
+        <p>Set how many points each kill is worth.</p>
+        <ul>
+            <li>Example: If each kill = 1 point, enter <code>1</code></li>
+            <li>Can be 0 or any positive number</li>
+        </ul>
+
+        <h4>4. Rank Points</h4>
+        <p>Configure points awarded for each placement (rank 1 to 25).</p>
+
+        <h3>Adding Rank Points</h3>
+        <ol>
+            <li>Click <span class="button-example">➕ Add Rank</span></li>
+            <li>Enter the <strong>Rank Position</strong> (1-25)</li>
+            <li>Enter the <strong>Points</strong> for that rank</li>
+            <li>Repeat for all ranks you want to configure</li>
+        </ol>
+
+        <div class="tip-box">
+            <h4>💡 Default Scoring</h4>
+            <p>If you don't specify points for a rank, it defaults to <code>0</code>. You only need to configure ranks that award points!</p>
+        </div>
+
+        <h3>Saving Configuration</h3>
+        <ol>
+            <li>Review all your settings</li>
+            <li>Tap <span class="button-example">💾 Save</span></li>
+            <li>You'll see a success message: <strong>"✅ Configuration saved successfully!"</strong></li>
+        </ol>
+
+        <div class="warning-box">
+            <h4>⚠️ Changing Configuration Later</h4>
+            <p>You can modify configuration at any time, but be aware:</p>
+            <ul>
+                <li>Reducing "Matches Per Day" will hide data from higher-numbered matches</li>
+                <li>Reducing "Total Days" will hide data from later days</li>
+                <li>Data is NOT deleted, just hidden until you increase the values again</li>
+            </ul>
+        </div>
+
+        <h2 id="match-entry">5. Match Entry</h2>
+
+        <h3>Overview</h3>
+        <p>The Match Entry screen is where you input results for each match. It features an intuitive design with visual feedback.</p>
+
+        <div class="screen-layout">┌─────────────────────────────────────────┐
+│ Enter Match Results           ⚙️ Menu  │  ← Title & Settings
+├─────────────────────────────────────────┤
+│ Select Day: [Day 1 ▼]                  │  ← Day selector
+├─────────────────────────────────────────┤
+│ Select Match:                           │
+│ ┌─────────┐ ┌─────────┐                │
+│ │Match 1  │ │Match 2  │                │  ← Match boxes
+│ └─────────┘ └─────────┘                │
+│ ┌─────────┐ ┌─────────┐                │
+│ │Match 3  │ │Match 4  │                │
+│ └─────────┘ └─────────┘                │
+├─────────────────────────────────────────┤
+│ Team Entry Form                         │  ← Appears when match selected
+│                                         │
+│ Rank | Team # | Kills                  │
+│  1   |   5    |   3                    │
+│  2   |  12    |   1                    │
+│  ...                                    │
+├─────────────────────────────────────────┤
+│  [💾 Save]           [🗑️ Reset]       │  ← Action buttons
+└─────────────────────────────────────────┘</div>
+
+        <h3>Basic Workflow</h3>
+
+        <h4><span class="step-number">1</span> Select a Day</h4>
+        <p>Use the dropdown at the top to choose which day you're entering data for.</p>
+
+        <h4><span class="step-number">2</span> Select a Match</h4>
+        <p>Click on one of the match boxes (Match 1, Match 2, etc.).</p>
+        <ul>
+            <li>For a new match, you'll be asked how many teams participated (1-25)</li>
+            <li>The team entry form will appear below</li>
+        </ul>
+
+        <h4><span class="step-number">3</span> Enter Team Data</h4>
+        <p>For each rank position:</p>
+        <ol>
+            <li>Enter the <strong>Team Number</strong> (1-25)</li>
+            <li>Enter the <strong>Kills</strong> (0 or more)</li>
+            <li>Move to the next rank</li>
+        </ol>
+
+        <h4><span class="step-number">4</span> Save Your Work</h4>
+        <p>Click <span class="button-example">💾 Save</span> to save all unsaved matches across all days.</p>
+
+        <h3>Match Box Color Codes</h3>
+
+        <table>
+            <tr>
+                <th>Color</th>
+                <th>Meaning</th>
+                <th>Action Needed</th>
+            </tr>
+            <tr>
+                <td>🔵 Blue</td>
+                <td>Currently selected</td>
+                <td>You're viewing/editing this match</td>
+            </tr>
+            <tr>
+                <td>🟢 Green</td>
+                <td>Saved data</td>
+                <td>Data is complete and saved</td>
+            </tr>
+            <tr>
+                <td>🟡 Yellow</td>
+                <td>Unsaved changes</td>
+                <td>Click Save to persist changes</td>
+            </tr>
+            <tr>
+                <td>⚫ Gray</td>
+                <td>No data</td>
+                <td>Click to start entering data</td>
+            </tr>
+        </table>
+
+        <h3>Advanced Features</h3>
+
+        <h4>Working Across Multiple Matches</h4>
+        <ol>
+            <li>Enter data for Match 1</li>
+            <li>Click Match 2 (Match 1 data stays in memory)</li>
+            <li>Enter data for Match 2</li>
+            <li>Click Save → Both matches are saved</li>
+        </ol>
+
+        <h4>Working Across Multiple Days</h4>
+        <ol>
+            <li>Enter data for Day 1, Match 1</li>
+            <li>Switch to Day 2 using dropdown</li>
+            <li>Enter data for Day 2, Match 1 and Match 2</li>
+            <li>Click Save → All 3 matches (across both days) are saved</li>
+        </ol>
+
+        <div class="tip-box">
+            <h4>💡 App Memory Feature</h4>
+            <p>When you reopen the app, it automatically returns to:</p>
+            <ul>
+                <li>The last day you were viewing</li>
+                <li>The last match you were editing</li>
+            </ul>
+            <p><strong>Note:</strong> Only saved data persists. Unsaved changes are lost if you close the app.</p>
+        </div>
+
+        <div class="warning-box">
+            <h4>⚠️ Important: Save Frequently!</h4>
+            <p>Data is only preserved when you click the Save button. If you:</p>
+            <ul>
+                <li>Close the app without saving</li>
+                <li>App crashes</li>
+                <li>Device runs out of battery</li>
+            </ul>
+            <p>You will lose all <strong>unsaved</strong> changes!</p>
+        </div>
+
+        <h3>Settings Menu (⚙️)</h3>
+        <p>Click the gear icon in the top-right to access:</p>
+
+        <h4>Manual Score</h4>
+        <ul>
+            <li>Manually override a team's score for a specific match</li>
+            <li>Select: Day → Match → Team Number</li>
+            <li>Enter new total score</li>
+            <li>Useful for corrections or special adjustments</li>
+        </ul>
+
+        <h4>Penalty</h4>
+        <ul>
+            <li>Apply penalty points to a team</li>
+            <li>Select: Day → Match → Team Number</li>
+            <li>Enter penalty points (deducted from total score)</li>
+            <li>Useful for rule violations</li>
+        </ul>
+
+        <h3>Reset Options (🗑️)</h3>
+
+        <h4>1. Reset Current Day</h4>
+        <ul>
+            <li>Select specific matches to reset</li>
+            <li>Only affects the currently selected day</li>
+            <li>Clears both saved and unsaved data</li>
+        </ul>
+
+        <h4>2. Reset Day Range</h4>
+        <ul>
+            <li>Select multiple days to reset</li>
+            <li>All matches on those days are cleared</li>
+        </ul>
+
+        <h4>3. Reset All Data</h4>
+        <ul>
+            <li>Clears everything (all matches, all days)</li>
+            <li><strong>Use with extreme caution!</strong></li>
+            <li>You'll get multiple confirmation dialogs</li>
+        </ul>
+
+        <h2 id="leaderboard">6. Viewing Leaderboard</h2>
+
+        <h3>Accessing the Leaderboard</h3>
+        <p>From the main menu, tap <span class="button-example">View Leaderboard</span></p>
+
+        <h3>Leaderboard Features</h3>
+
+        <h4>Filter by Day</h4>
+        <ul>
+            <li>Use the dropdown to filter: <strong>"All Days"</strong> or specific days</li>
+            <li><strong>All Days:</strong> Shows cumulative scores across all matches</li>
+            <li><strong>Specific Day:</strong> Shows scores for only that day's matches</li>
+        </ul>
+
+        <h4>Sorting Options</h4>
+        <ul>
+            <li><strong>By Points (Default):</strong> Highest to lowest score</li>
+            <li><strong>By Team Number:</strong> Numerical order (Team 1, 2, 3...)</li>
+        </ul>
+
+        <h3>Understanding the Columns</h3>
+
+        <table>
+            <tr>
+                <th>Column</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>Team</td>
+                <td>Team number (1-25)</td>
+            </tr>
+            <tr>
+                <td>Points</td>
+                <td>Total score (rank points + kill points - penalties)</td>
+            </tr>
+            <tr>
+                <td>Kills</td>
+                <td>Total number of kills across all matches</td>
+            </tr>
+            <tr>
+                <td>Matches</td>
+                <td>Number of matches participated in</td>
+            </tr>
+        </table>
+
+        <div class="tip-box">
+            <h4>💡 Score Calculation</h4>
+            <p><strong>Total Points = (Rank Points + Kill Points) - Penalties</strong></p>
+            <p>Example: Team finishes 1st (15 pts) with 3 kills (3 pts) = 18 total points</p>
+        </div>
+
+        <h2 id="advanced">7. Advanced Features</h2>
+
+        <h3>Team Grouping</h3>
+        <p>Combine scores from multiple team numbers into one main team.</p>
+
+        <h4>Use Case</h4>
+        <p>If a player uses multiple team slots (e.g., Team 7 and Team 19), you can group them to combine their scores under one main team number.</p>
+
+        <h4>How to Use</h4>
+        <ol>
+            <li>Go to <strong>Configuration</strong></li>
+            <li>Tap <span class="button-example">👥 Team Grouping</span></li>
+            <li>Enter team numbers to group (e.g., "7, 19")</li>
+            <li>Enter main team number (e.g., "7")</li>
+            <li>Tap <strong>Add Group</strong></li>
+        </ol>
+
+        <h3>Manual Score Adjustment</h3>
+        <p>Override the calculated score for a specific team in a specific match.</p>
+
+        <h4>Steps</h4>
+        <ol>
+            <li>Match Entry → ⚙️ Menu → Manual Score</li>
+            <li>Select Day Number</li>
+            <li>Select Match Number</li>
+            <li>Enter Team Number</li>
+            <li>Enter New Score</li>
+            <li>Tap <strong>Apply Score</strong></li>
+        </ol>
+
+        <h3>Penalty System</h3>
+        <p>Deduct points from a team for rule violations.</p>
+
+        <h4>Steps</h4>
+        <ol>
+            <li>Match Entry → ⚙️ Menu → Penalty</li>
+            <li>Select Day Number</li>
+            <li>Select Match Number</li>
+            <li>Enter Team Number</li>
+            <li>Enter Penalty Points (positive number)</li>
+            <li>Tap <strong>Apply Penalty</strong></li>
+        </ol>
+
+        <div class="warning-box">
+            <h4>⚠️ Penalty Notes</h4>
+            <ul>
+                <li>Penalties are <strong>deducted</strong> from the team's total score</li>
+                <li>Enter penalty as a positive number (e.g., 5 means -5 points)</li>
+                <li>Penalties persist until you manually remove them</li>
+            </ul>
+        </div>
+
+        <h2 id="troubleshooting">8. Troubleshooting</h2>
+
+        <h3>Common Issues & Solutions</h3>
+
+        <h4>Issue: "No configuration found" message</h4>
+        <p><strong>Solution:</strong> You must configure tournament settings before entering match data. Go to Main Menu → Configure Tournament.</p>
+
+        <h4>Issue: I switched matches and my data disappeared!</h4>
+        <p><strong>Solution:</strong> Your data is saved in temporary memory. Switch back to that match to see it again. Click Save to persist it permanently.</p>
+
+        <h4>Issue: I closed the app and my data is gone!</h4>
+        <p><strong>Solution:</strong> Unsaved data is lost when the app closes. Always click the Save button before exiting.</p>
+
+        <h4>Issue: Match boxes are all gray</h4>
+        <p><strong>Solution:</strong> No data has been entered yet. Click a match box to start entering data.</p>
+
+        <h4>Issue: Access key shows "already used"</h4>
+        <p><strong>Solution:</strong> Each key can only be used once. Contact your tournament administrator for a new key.</p>
+
+        <h4>Issue: Session expired / Auto-logged out</h4>
+        <p><strong>Solution:</strong> Your session duration has ended. You need a new access key to log in again. All tournament data is preserved and will be accessible after you log back in.</p>
+
+        <h4>Issue: Can't save configuration</h4>
+        <p><strong>Solution:</strong> Make sure all required fields are filled:</p>
+        <ul>
+            <li>Total Days (minimum 1)</li>
+            <li>Matches Per Day (minimum 1)</li>
+            <li>Points Per Kill (0 or more)</li>
+        </ul>
+
+        <h4>Issue: Leaderboard shows "No data"</h4>
+        <p><strong>Solution:</strong> No match results have been saved yet. Enter and save at least one match's data.</p>
+
+        <h3>Data Safety</h3>
+
+        <div class="tip-box">
+            <h4>💡 Best Practices</h4>
+            <ul>
+                <li><strong>Save frequently:</strong> Click Save after completing each day's matches</li>
+                <li><strong>Double-check entries:</strong> Review data before saving</li>
+                <li><strong>Use reset carefully:</strong> Reset operations are permanent</li>
+                <li><strong>Check match colors:</strong> Green = saved, Yellow = unsaved</li>
+            </ul>
+        </div>
+
+        <h3>Need Help?</h3>
+        <p>If you encounter issues not covered in this guide:</p>
+        <ol>
+            <li>Check if you've saved your configuration</li>
+            <li>Verify all required fields are filled</li>
+            <li>Try restarting the app</li>
+            <li>Contact your tournament administrator</li>
+        </ol>
+
+        <hr style="margin: 40px 0; border: 1px solid #444;">
+
+        <div class="feature-box">
+            <h3>🎯 Quick Reference Card</h3>
+            <table>
+                <tr>
+                    <th>Task</th>
+                    <th>Steps</th>
+                </tr>
+                <tr>
+                    <td>First-Time Setup</td>
+                    <td>Login → Configure Tournament → Save</td>
+                </tr>
+                <tr>
+                    <td>Enter Match Results</td>
+                    <td>Main → Enter Match → Select Day → Select Match → Fill Data → Save</td>
+                </tr>
+                <tr>
+                    <td>View Rankings</td>
+                    <td>Main → View Leaderboard → Filter by Day (optional)</td>
+                </tr>
+                <tr>
+                    <td>Apply Penalty</td>
+                    <td>Match Entry → ⚙️ → Penalty → Fill Details → Apply</td>
+                </tr>
+                <tr>
+                    <td>Reset Match</td>
+                    <td>Match Entry → 🗑️ → Select Reset Type → Confirm</td>
+                </tr>
+            </table>
+        </div>
+
+        <div style="text-align: center; margin-top: 60px; padding: 20px; border-top: 2px solid #ff0000;">
+            <p style="color: #888; font-size: 0.9em;">© 2025 LiL Ranker</p>
+        </div>
+    </div>
+</body>
+</html>
