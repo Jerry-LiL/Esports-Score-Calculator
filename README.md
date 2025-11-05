@@ -46,15 +46,6 @@ This will:
 
 1. Open project in Android Studio
 2. Build and run (Shift+F10)
-3. Use test key: `TEST-KEY-2025-001`
-
-### 3. Test Keys Available
-
-- `TEST-KEY-2025-001`
-- `TEST-KEY-2025-002`
-- `TEST-KEY-2025-003`
-- `DEMO-ACCESS-001`
-- `DEMO-ACCESS-002`
 
 ## 📁 Project Structure
 
